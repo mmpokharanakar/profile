@@ -1,86 +1,27 @@
-<!-- education.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education | Mugdha Pokharanakar</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        .timeline {
-            position: relative;
-            margin: 2rem 0;
-            padding-left: 48px;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 10px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: #dee2e6;
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 3rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -44px;
-            width: 16px;
-            height: 16px;
-            background-color: #0d6efd;
-            border-radius: 50%;
-            z-index: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/education.css">
 </head>
 
 <body>
-    <div class="d-flex flex-column min-vh-100">
+    <div id="page-wrapper">
         <!-- Loading Spinner -->
         <div id="loading">
             <img src="images/logo.png" alt="Loading Logo">
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Logo" height="40" class="rotating-logo">
-                    <p class="d-inline align-middle ms-2">Mugdha Pokharanakar</p>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="education.html">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="teaching-assistance.html">Teaching assistance</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-                        <li class="nav-item"><a class="nav-link" href="outreach.html">Outreach</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="conference-workshop.html">Conferences/Workshops</a></li>
-                        <li class="nav-item"><a class="nav-link" href="quick-links.html">Quick Links</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div data-include="partials/navbar.html"></div>
 
         <!-- Education Timeline -->
-        <main class="flex-fill">
+        <main>
             <div class="container mt-5">
                 <h2 class="mb-4 text-center">Education</h2>
                 <div class="timeline">
@@ -100,9 +41,11 @@
                             <h5>Master of Science (Mathematics)</h5>
                             <p class="mb-1">August 2022 – June 2025</p>
                             <p class="mb-1 lead">IISER Bhopal</p>
-                            <p class="mb-1">Thesis: <a href="assets/MSThesis_Mugdha.pdf" target="_blank">Expansion in Graphs and Graph Limits</a></p>
+                            <p class="mb-1">Thesis: <a href="assets/MSThesis_Mugdha.pdf" target="_blank">Expansion in
+                                    Graphs and Graph Limits</a></p>
                             <p style="margin-bottom: 4px;">
-                                Thesis supervisor: <a href="https://sites.google.com/site/jyotiprakashsaha/" target="_blank">Dr. Jyoti Prakash Saha</a></p>
+                                Thesis supervisor: <a href="https://sites.google.com/site/jyotiprakashsaha/"
+                                    target="_blank">Dr. Jyoti Prakash Saha</a></p>
                         </div>
                     </div>
 
@@ -110,7 +53,8 @@
                         <div class="bg-light rounded shadow p-4">
                             <h5>Bachelor of Science (Mathematics)</h5>
                             <p class="mb-1">June 2019 – April 2022</p>
-                            <p class="mb-1 lead">R. P. Gogate College of Arts and Science and R. V. Jogalekar College of Commerce, Ratnagiri, Maharashtra</p>
+                            <p class="mb-1 lead">R. P. Gogate College of Arts and Science and R. V. Jogalekar College of
+                                Commerce, Ratnagiri, Maharashtra</p>
                             <p style="margin-bottom: 4px;">
                                 INSPIRE Scholarship for Higher Education (SHE), Department of Science and Technology,
                                 Government of India</p>
@@ -121,19 +65,9 @@
         </main>
 
         <!-- Footer -->
-        <footer class="bg-light text-center mt-auto p-2 shadow">
-            <small>
-                &copy; 2025 | Developed by Devadatta Pokharanakar | 
-                <a href="mailto:dmpokharanakar@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/devadatta-pokharanakar" title="LinkedIn" target="_blank">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://github.com/DevadattaP" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-            </small>
-        </footer>
+        <div data-include="partials/footer.html"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

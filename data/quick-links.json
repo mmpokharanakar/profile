@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Mathematics Arxiv",
+        "link": "https://arxiv.org/archive/math"
+    },
+    {
+        "name": "Yufei Zhao's webpage",
+        "link": "https://yufeizhao.com/"
+    },
+    {
+        "name": "Jyoti Prakash Saha's webpage about Mathematics Olympiads",
+        "link": "https://jpsaha.github.io/MOTP/"
+    },
+    {
+        "name": "Evan Chen's webpage",
+        "link": "https://web.evanchen.cc/"
+    },
+    {
+        "name": "Mathematics Training and Talent Search Programme (MTTS)",
+        "link": "https://mtts.org.in/"
+    },
+    {
+        "name": "Prof. Kumaresan's lectures on YouTube",
+        "link": "https://www.youtube.com/@kumarhcu"
+    },
+    {
+        "name": "Expository articles by Prof. Kumaresan",
+        "link": "https://4dspace.mtts.org.in/expository-articles-list.php"
+    },
+    {
+        "name": "Expository papers by Keith Conrad",
+        "link": "https://kconrad.math.uconn.edu/blurbs/"
+    },
+    {
+        "name": "Lean community",
+        "link": "https://leanprover-community.github.io/"
+    },
+    {
+        "name": "Zulip chat of the Lean community",
+        "link": "https://leanprover.zulipchat.com/"
+    }
+]

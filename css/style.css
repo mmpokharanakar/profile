@@ -2,6 +2,37 @@ body {
     background-color: #ffffff;
     scroll-behavior: smooth;
     margin: 0;
+    padding-top: 66px;
+}
+
+/* Flexible page wrapper */
+#page-wrapper {
+    min-height: calc(100vh - 66px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content pushes footer down */
+main {
+    flex: 1;
+}
+
+/* Specific to index hero section */
+.hero-container {
+    margin-top: 2rem; /* avoid touching navbar */
+}
+
+/* On medium+ screens, vertically center the hero */
+@media (min-width: 768px) {
+    main {
+        min-height: calc(100vh - 66px - 40px); 
+        /* 66 = navbar height, 40 = approximate footer height */
+        /* adjust if footer is taller/shorter */
+    }
+
+    .hero-container {
+        margin-top: 0; /* remove extra top space when centered */
+    }
 }
 
 .nav-link.active {
@@ -67,4 +98,26 @@ body {
 
 .social-icon:hover {
     color: #007bff;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.navbar a:hover {
+    text-decoration: none !important;
+}
+.navbar .nav-link {
+    text-decoration: none;
+    transition: color 0.25s ease, transform 0.25s ease; /* smooth hover */
+}
+
+.navbar .nav-link:hover {
+    text-decoration: none !important;
+    color: #007bff;   /* or whichever color you prefer */
+    transform: translateY(-2px); /* subtle lift effect */
 }
