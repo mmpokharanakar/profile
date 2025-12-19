@@ -1,3 +1,84 @@
-.navbar-brand p {
-    display: none !important;
+.navbar-name-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar-name-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* For large screens */
+@media (min-width: 992px) {
+    main {
+        min-height: calc(100vh - 66px);
+        /* Full viewport height minus navbar */
+    }
+
+    #about-section {
+        position: sticky;
+        top: 66px;
+        /* Stick below navbar */
+        height: calc(100vh - 66px);
+        /* Full viewport height minus navbar */
+        overflow-y: hidden;
+        /* No scroll on left side */
+    }
+
+    #education-section {
+        height: calc(100vh - 66px);
+        /* Full viewport height minus navbar */
+        overflow-y: auto;
+        /* Scrollable on right side */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE/Edge */
+    }
+
+    #education-section::-webkit-scrollbar {
+        display: none;
+        /* Chrome/Safari */
+    }
+
+    .hero-container {
+        margin-top: 0;
+    }
+}
+
+/* For small screens */
+@media (max-width: 991px) {
+    main {
+        flex-direction: column !important;
+    }
+
+    #about-section,
+    #education-section {
+        min-height: auto;
+        overflow: visible;
+        position: static;
+    }
+}
+
+/* Adjust padding for better spacing */
+#about-section,
+#education-section {
+    padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+
+    #about-section,
+    #education-section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #about-section,
+    #education-section {
+        padding: 4rem;
+    }
 }

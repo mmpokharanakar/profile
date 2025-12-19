@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Mugdha Pokharanakar | Profile</title>
+    <title>Profile | Mugdha Pokharanakar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/education.css">
 </head>
 
 <body>
@@ -20,31 +21,81 @@
         <!-- Navbar -->
         <div data-include="partials/navbar.html"></div>
 
-        <!-- Hero Section -->
-        <main class="d-flex align-items-center justify-content-center flex-column">
-            <div class="container text-center hero-container">
-                <img src="images/mugdha.jpg" alt="Mugdha Pokharanakar" class="rounded-circle shadow" height="150">
-                <h1 class="mt-4">Mugdha Pokharanakar</h1>
-                <h4 class="text-muted">Integrated PhD (Mathematics) student</h4>
-                <div class="mt-4">
-                    <p class="lead">👋 Hi, I'm Mugdha Mahesh Pokharanakar, an integrated PhD student at the
-                        <a href="https://maths.iiserb.ac.in/" target="_blank">Department of Mathematics</a>,
-                        <a href="https://www.iiserb.ac.in/" target="_blank">IISER Bhopal</a>.
-                    </p>
-                    <p class="lead">
-                        I like to learn mathematics through discussions, teaching and research.
-                        Currently I am working in Graph Theory.
-                    </p>
+        <!-- Main Content -->
+        <main class="d-flex flex-column flex-lg-row">
+            <!-- Left Side: About Section -->
+            <div id="about-section" class="col-lg-6 p-4 p-lg-5 d-flex align-items-center justify-content-center">
+                <div class="container text-center hero-container">
+                    <img src="images/mugdha.jpg" alt="Mugdha Pokharanakar" class="rounded-circle shadow" height="150">
+                    <h1 class="mt-4">Mugdha Pokharanakar</h1>
+                    <h4 class="text-muted">Integrated PhD (Mathematics) student</h4>
+                    <div class="mt-4">
+                        <p class="lead">👋 Hi, I'm Mugdha Mahesh Pokharanakar, an integrated PhD student at the
+                            <a href="https://maths.iiserb.ac.in/" target="_blank">Department of Mathematics</a>,
+                            <a href="https://www.iiserb.ac.in/" target="_blank">IISER Bhopal</a>.
+                        </p>
+                        <p class="lead">
+                            I like to learn mathematics through discussions, teaching and research.
+                            Currently I am working in Graph Theory.
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <a href="mailto:mugdha22@iiserb.ac.in" class="social-icon mx-2" title="Email">
+                            <i class="bi bi-envelope fs-3"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mugdha-pokharanakar" class="social-icon mx-2" title="LinkedIn"
+                            target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
+                        <a href="https://github.com/mmpokharanakar" class="social-icon mx-2" title="GitHub" target="_blank">
+                            <i class="bi bi-github fs-3"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="mt-4">
-                    <a href="mailto:mugdha22@iiserb.ac.in" class="social-icon mx-2" title="Email">
-                        <i class="bi bi-envelope fs-3"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mugdha-pokharanakar" class="social-icon mx-2" title="LinkedIn"
-                        target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
-                    <a href="https://github.com/mmpokharanakar" class="social-icon mx-2" title="GitHub" target="_blank">
-                        <i class="bi bi-github fs-3"></i>
-                    </a>
+            </div>
+            
+            <div class="d-lg-none text-center mt-4">
+                <i id="scroll-to-education" class="bi bi-chevron-double-down fs-3 text-muted"></i>
+            </div>
+
+            <!-- Right Side: Education Section -->
+            <div id="education-section" class="col-lg-6 p-4 p-lg-5">
+                <h2 class="mb-4 text-center">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="bg-light rounded shadow p-4">
+                            <h5>Integrated PhD (Mathematics)</h5>
+                            <p class="mb-1">August 2022 – Present</p>
+                            <p class="mb-1 lead">IISER Bhopal</p>
+                            <p class="mb-1">Institute Fellowship (August 2022 – July 2024)</p>
+                            <p style="margin-bottom: 4px;">
+                                Junior Research Fellowship (JRF) from UGC (August 2024 – Present)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="bg-light rounded shadow p-4">
+                            <h5>Master of Science (Mathematics)</h5>
+                            <p class="mb-1">August 2022 – June 2025</p>
+                            <p class="mb-1 lead">IISER Bhopal</p>
+                            <p class="mb-1">Thesis: <a href="assets/MSThesis_Mugdha.pdf" target="_blank">
+                                <i class="bi bi-filetype-pdf"></i>
+                                Expansion in Graphs and Graph Limits</a></p>
+                            <p style="margin-bottom: 4px;">
+                                Thesis supervisor: <a href="https://sites.google.com/site/jyotiprakashsaha/"
+                                    target="_blank">Dr. Jyoti Prakash Saha</a></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="bg-light rounded shadow p-4">
+                            <h5>Bachelor of Science (Mathematics)</h5>
+                            <p class="mb-1">June 2019 – April 2022</p>
+                            <p class="mb-1 lead">R. P. Gogate College of Arts and Science and R. V. Jogalekar College of
+                                Commerce, Ratnagiri, Maharashtra</p>
+                            <p style="margin-bottom: 4px;">
+                                INSPIRE Scholarship for Higher Education (SHE), Department of Science and Technology,
+                                Government of India</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

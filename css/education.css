@@ -30,3 +30,17 @@
     border-radius: 50%;
     z-index: 1;
 }
+
+/* Adjust timeline for mobile */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 40px;
+    }
+
+    .timeline-item::before {
+        left: -36px;
+        width: 14px;
+        height: 14px;
+    }
+}
+
